@@ -26,3 +26,25 @@ function navLinkClick() {
     navToggler.click();
   }
 }
+
+
+// Chart Configration
+
+var chart = new Highcharts.Chart({
+  chart: {
+    renderTo: 'chart-container',
+    marginBottom: 80
+  },
+  xAxis: {
+    categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+    gridLineWidth: 0,
+    labels: {
+      rotation: 90
+    }
+  },
+
+  series: [{
+    data: [29.9, 71.5, 106.4, 129.2, 144.0]        
+  }]
+});
+

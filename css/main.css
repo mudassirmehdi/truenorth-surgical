@@ -521,7 +521,6 @@ a.site-logo {
 }
 .btn {
   text-decoration: none;
-  background-color: red;
   padding: 16px 40px;
   border-radius: 25px;
   display: inline-flex;
@@ -535,6 +534,17 @@ a.site-logo {
 .btn-main {
   background-color: #33b0e6;
   color: #fff;
+}
+
+.site-link {
+  font-size: 1rem;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  color: #33b0e6;
+}
+.site-link img {
+  margin-left: 10px;
 }
 
 .overview {
@@ -559,6 +569,13 @@ a.site-logo {
   font-family: "proximanova-regular";
   margin-bottom: 1rem;
   line-height: 30px;
+}
+.overview .chart-area .chart__container {
+  border-radius: 8px;
+  padding: 30px;
+  background-color: #273241;
+  display: inline-block;
+  box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.2);
 }
 
 .education .education-area {
@@ -654,6 +671,54 @@ a.site-logo {
   font-size: 18px;
   margin: 20px 0 40px 0;
   font-family: "proximanova-semibold";
+}
+
+.our-news .news-inner {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+.our-news .news-inner .news-inner-item {
+  width: 22%;
+}
+.our-news .news-inner .section-info {
+  padding-right: 30px;
+}
+.our-news .news-inner .section-info span {
+  font-size: 13px;
+  font-family: "proximanova-light";
+  color: #4fbbe9;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.our-news .news-inner .section-info h3 {
+  font-size: 50px;
+  margin: 0;
+  margin-bottom: 16px;
+  margin-top: -10px;
+}
+.our-news .news-inner .section-info p {
+  font-family: "proximanova-regular";
+  line-height: 28px;
+  margin-bottom: 20px;
+}
+.our-news .news-inner .news-box {
+  box-shadow: 4px 0 7px rgba(0, 0, 0, 0.22);
+}
+.our-news .news-inner .news-box .news-box-text {
+  padding: 10px;
+}
+.our-news .news-inner .news-box .news-box-text h4 {
+  font-size: 24px;
+  font-family: "proximanova-semibold";
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+.our-news .news-inner .news-box .thumbnail {
+  width: 100%;
+  margin-bottom: 0px;
 }
 
 body {
