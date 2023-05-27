@@ -1,0 +1,71 @@
+.header-area {
+    .hero {
+        .intro-area {
+            background-image: url('../images/hero.png');
+            padding: 160px 40px;
+            // height: 100%;
+            background-size: cover;
+            background-position: center;
+            // z-index: -999;
+            display: block;
+
+            position: relative;
+
+            h1 {
+                font-size: 80px;
+                font-family: $font-semibold;
+                color: #fff;
+                text-shadow: 4px 0 8px rgba(0, 0, 0, 0.78);
+                // margin-bottom: 10px;
+            }
+
+
+            .hero-logo {
+              position: absolute;
+              bottom: 0;
+              right: 0;
+              transform: translate(-14%, -45%);
+            }
+
+            .hero-bottom {
+                position: absolute;
+                bottom: -5%;
+                left: 50%;
+                right: 50%;
+                transform: translate(-50%);
+                .arrow {
+                    background-color: #fff;
+                    width: 70px; height: 50px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 50%;
+                    z-index: 999;
+
+                    img {
+                        margin-top: -15px;
+                    }
+                }
+            }
+
+            &::after {
+                content: url('../images/decorative2.png');
+                position: absolute;
+                top: 35%;
+                bottom: 65%;
+                right: 0; 
+                transform: translate(60px, -50px);
+            }
+
+            &::before {
+                content: url('../images/decorative1.png');
+                position: absolute;
+                top: 80%;
+                left: 0;
+                bottom: 20%;
+                transform: translate(-60px, 0px);
+            }
+        }
+    }
+}
+

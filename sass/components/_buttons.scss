@@ -1,0 +1,19 @@
+.btn {
+    text-decoration: none;
+    background-color: red;
+    padding: 16px 40px;
+    border-radius: 25px;
+    display: inline-flex;
+    align-items: center;
+    z-index: 999;
+
+    img {
+        margin-left: 10px;
+    }
+    
+}
+
+.btn-main {
+    background-color: #33b0e6;
+    color: #fff;
+}

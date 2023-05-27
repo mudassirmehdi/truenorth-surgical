@@ -1,0 +1,106 @@
+.footer {
+    background-image: url('../images/footer-bg.png');
+    width: 100%;
+    background-size: cover;
+    background-position: center center;
+    padding: 100px;
+    .footer-area {
+        display: flex;
+        justify-content: space-between;
+        // align-items: center;
+        gap: 1rem;
+        flex-wrap: wrap;
+        .footer-item {
+
+            width: 23%;
+            ul {
+                list-style: none;
+            } 
+            
+
+            .footer-logo {
+                
+                text-align: center;
+                img {
+                    margin-bottom: 1rem; 
+                }
+            }
+
+            .footer-contact {
+
+                
+                ul { 
+                    li { 
+                        margin-bottom: 1rem;
+                        a {
+                            font-size: 1rem;
+                            font-family: $font-light;
+                            color: #fff;
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+
+            .footer-social {
+                
+
+                ul {
+                    display: flex;
+                    gap: 1rem;
+                }
+                
+            }
+
+            .footer-copyright {
+                
+                text-align: right;
+               p {
+                font-size: 13px;
+                color: #fff;
+                margin-bottom: 10px;
+               }
+            }
+
+        }
+    }
+}
+
+
+@media screen and (max-width: 767px) {
+    .footer {
+        .footer-area {
+            .footer-item {
+                width: 100%;
+    
+                .footer-logo {
+                    text-align: center;
+                }
+    
+                .footer-contact {
+                    ul { 
+                        text-align: center;
+                    }
+                }
+    
+                .footer-social {
+            
+                    ul {
+                        display: flex;
+                        justify-content: center;
+                        gap: 1rem;
+                        text-align: center;
+                    }
+                    
+                }
+    
+                .footer-copyright {
+                    
+                    text-align: center; 
+                }
+    
+            }
+        }
+    }
+    
+}

@@ -1,0 +1,140 @@
+.overview {
+
+    background-image: url('../images/wavy.png');
+    background-position: bottom;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    .overview-heading {
+        text-align: center;
+        width: 75%;
+        margin: auto;
+        h2 {
+            font-size: 60px;
+            font-family: $font-semibold;
+            line-height: 68px;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            font-size: 18px;
+            font-family: $font-regular; 
+            margin-bottom: 1rem;
+            line-height: 30px;
+        }
+    }
+}
+
+.education {
+    .education-area {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1rem;
+        .education-items {
+            width: 48%;
+        }
+
+        .edu-img {
+            position: relative;
+            img {
+                width: 100%;
+            }
+
+            &::after {
+                content: url('../images/decorative1.png');
+                position: absolute;
+                top: 60%;
+                left: -12%;
+                bottom: 40%;
+                // transform: translate(-20px, -40px);
+            }
+
+        }
+
+        .edu-content {
+            padding-left: 20px;
+            position: relative;
+            span {
+                font-size: 1rem;
+                font-family: $font-medium;
+                color: #4fbbe9;
+                letter-spacing: 3px;
+                text-transform: uppercase;
+                margin-bottom: 10px;
+                
+            }
+
+            h3 {
+                font-size: 70px;
+                margin: 0;
+                margin-bottom: 16px;
+                margin-top: -10px;
+            }
+
+            p {
+                font-family: $font-regular;
+                line-height: 28px;
+                margin-bottom: 20px;
+            }
+
+            &::after {
+                content: url('../images/decorative2.png');
+                position: absolute;
+                top: 0;
+                left: 0;
+                transform: translate(-20px, -40px);
+            }
+        }
+    }
+}
+
+.products {
+    background-color: rgba(215 ,215, 215, 0.22);
+    width: 100%;
+    .product-heading {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        h2 {
+            font-size: 80px;
+            text-transform: uppercase;
+            color: #fff;
+            margin-top: -20px;
+            font-family: $font-extrabold;
+            letter-spacing: 2px;
+        }
+
+        img {
+            margin-top: -25px;
+        }
+    }
+
+
+    .product-inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap; 
+        
+
+        padding: 20px 0 70px 0;
+
+        .product-items {
+            width: 20%;
+            text-align: center;
+            gap: 15px;
+            img {
+                height: 100px;
+                // width: 100px;
+                margin-bottom: 0px;
+            }
+
+            h5 {
+                font-size: 18px;
+                margin: 20px 0 40px 0;
+                font-family: $font-semibold;
+            }
+        }
+    }
+}
