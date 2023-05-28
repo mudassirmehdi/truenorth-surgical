@@ -12,9 +12,10 @@
             position: relative;
 
             h1 {
-                font-size: 80px;
+                font-size: 82px;
                 font-family: $font-semibold;
                 color: #fff;
+                line-height: 78px;
                 text-shadow: 4px 0 8px rgba(0, 0, 0, 0.78);
                 // margin-bottom: 10px;
             }
@@ -30,7 +31,7 @@
             .hero-bottom {
                 position: absolute;
                 bottom: -5%;
-                left: 50%;
+                left: 47%;
                 right: 50%;
                 transform: translate(-50%);
                 .arrow {
@@ -44,6 +45,7 @@
 
                     img {
                         margin-top: -15px;
+                        animation: scrolldown 1.2s ease-in-out infinite 0.15s;
                     }
                 }
             }
@@ -69,3 +71,19 @@
     }
 }
 
+
+
+@keyframes scrolldown {
+    0%{
+        transform: translateY(20%);
+        opacity: 1;
+    }
+    50%{
+        transform: translateY(0%);
+        opacity: 0.2;
+    }
+    100%{
+        transform: translateY(20%);
+        opacity: 1;
+    }
+}

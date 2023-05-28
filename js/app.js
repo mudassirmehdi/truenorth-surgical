@@ -27,24 +27,15 @@ function navLinkClick() {
   }
 }
 
+// show hide the nav search form 
 
-// Chart Configration
+const navSearch = document.getElementById('nav-search');
+const searchIcon = document.getElementById('search-icon');
 
-var chart = new Highcharts.Chart({
-  chart: {
-    renderTo: 'chart-container',
-    marginBottom: 80
-  },
-  xAxis: {
-    categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
-    gridLineWidth: 0,
-    labels: {
-      rotation: 90
-    }
-  },
-
-  series: [{
-    data: [29.9, 71.5, 106.4, 129.2, 144.0]        
-  }]
+searchIcon.addEventListener('click', function handleClick() {
+  if (navSearch.style.display === 'none') {
+    navSearch.style.display = 'block'; 
+  } else {
+    navSearch.style.display = 'none'; 
+  }
 });
-

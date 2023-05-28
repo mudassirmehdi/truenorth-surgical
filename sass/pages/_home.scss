@@ -24,17 +24,6 @@
         }
     }
 
-    .chart-area { 
-
-        .chart__container {
-            border-radius: 8px;
-            padding: 30px;
-            background-color: #273241;
-            // width: 700px;
-            display: inline-block;
-            box-shadow: 0px 5px 12px rgba(0,0,0,0.2);
-        }
-    }
 
     
 }
@@ -45,6 +34,7 @@
         justify-content: space-between;
         align-items: center;
         gap: 1rem;
+        flex-wrap: wrap;
         .education-items {
             width: 48%;
         }
@@ -108,6 +98,7 @@
     width: 100%;
     .product-heading {
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
         align-items: center;
         h2 {
@@ -209,5 +200,99 @@
                 margin-bottom: 0px;
             }
         }
+    }
+}
+
+
+@media screen and (max-width: 767px) { 
+    .section-padding {
+        padding: 30px 0;
+    }
+
+    .header-area {
+        .hero {
+            .intro-area {
+                .hero-bottom {
+                    left: 45%;
+                }
+
+                &::after {
+                    content: '' !important;
+                    position: absolute;
+                    top: 35%;
+                    bottom: 65%;
+                    right: 0; 
+                    transform: translate(60px, -50px);
+                }
+    
+                &::before {
+                    content: ''  !important;
+                    position: absolute;
+                    top: 80%;
+                    left: 0;
+                    bottom: 20%;
+                    transform: translate(-60px, 0px);
+                }
+            }
+        }
+    }
+
+    .header-area {
+        .hero {
+            .intro-area {
+                h1 {
+                    font-size: 40px;
+                    line-height: 50px;
+                }
+            }
+        }
+    }
+
+    .overview {
+        .overview-heading {
+            h2 {
+                font-size: 29px;
+                line-height: 45px;
+            }
+        }
+    }
+
+    .education {
+        .education-area {
+            .edu-img {
+                margin-bottom: 40px;
+            }
+            .education-items {
+                width: 100%;
+                gap: 16px;
+            }
+        }
+    }
+
+    .products {
+        .product-heading {
+            img {
+                display: none;
+            }
+
+            h2 {
+                font-size: 50px;
+            }
+        }
+
+        .product-inner {
+            .product-items {
+                width: 50%;
+            }
+        }
+    }
+
+    .our-news {
+       .news-inner {
+            .news-inner-item {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+       }
     }
 }
