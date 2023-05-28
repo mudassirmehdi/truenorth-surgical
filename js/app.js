@@ -62,5 +62,26 @@ searchIcon.addEventListener('click', function handleClick() {
     $('#nav-toggle').on('click', function() {
       this.classList.toggle('active');
     });
+
+
+    $('.ll-dots-1').click(function(){
+      $('.ll-dots-content-1').toggle();
+    });
+
+    $('.ll-dots-2').click(function(){
+      $('.ll-dots-content-2').toggle();
+    });
+
+    $('.ll-dots-3').click(function(){
+      $('.ll-dots-content-3').toggle();
+    });
+
+    $('.ll-dots-4').click(function(){
+      $('.ll-dots-content-4').toggle();
+    });
+
+    $('.ll-dots-5').click(function(){
+      $('.ll-dots-content-5').toggle();
+    });
   }); // end DOM ready
 })(jQuery); // end jQuery
